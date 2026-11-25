@@ -2,12 +2,15 @@
 
 ## 🧩 Datos generales
 
-- Estudiante: Sara Cohen.
-- Club: Entre Líneas.
-- Repositorio previsto: `2023saracohen-yeshurun`.
-- Proyecto asignado: `sara/pizarron-de-estudio`.
-- Tecnologías: HTML, CSS y JavaScript sin frameworks.
-- Persistencia: `localStorage` del navegador con la clave `entre-lineas:pizarron-de-estudio:notas:v1`.
+| Campo | Detalle |
+| --- | --- |
+| Integrante 1 | Sara Cohen |
+| Integrante 2 | No corresponde: trabajo individual |
+| Modelos de IA utilizados | ChatGPT; GPT-6 Luna (implementación y revisión) |
+| Tecnologías del proyecto | HTML5, CSS3, JavaScript, Markdown, Visual Studio Code y GitHub |
+| Link del repositorio | https://github.com/2023saracohen-yeshurun/pizarron-de-estudio |
+
+---
 
 ## 📄 Sketch
 

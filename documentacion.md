@@ -28,7 +28,6 @@ Boceto conservado como referencia de distribución: cabecera a todo lo ancho, fo
 - Una edición de valor o unidades invalida el resultado vigente. Solo ese resultado vigente se puede guardar como nota en Cálculos.
 - Si el JSON guardado no se puede leer o no es una lista, se inicia con una lista vacía; si hay notas individuales dañadas, se conservan las válidas y se avisa. Si `localStorage` no está disponible o falla al escribir, la interfaz sigue operativa en memoria durante la sesión e informa que el cambio no quedó persistido.
 - El almacenamiento pertenece a este navegador y perfil: no sincroniza entre dispositivos ni constituye una copia de seguridad.
-- La consigna contiene una enumeración incompleta de funcionalidades. Este proyecto implementa notas, filtros, persistencia y conversor integrado; confirmar con la docente si exige alguna función adicional.
 
 ## 💬 Prompts utilizados
 

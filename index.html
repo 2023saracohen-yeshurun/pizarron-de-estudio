@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f2e8">
+  <meta name="description" content="Un espacio de Entre Líneas para guardar ideas de lectura y resolver conversiones de unidades.">
+  <title>Tablero de ideas · Entre Líneas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="masthead">
+      <a class="wordmark" href="#inicio" aria-label="Entre Líneas, inicio">ENTRE LÍNEAS <span>/ HERRAMIENTAS</span></a>
+      <p class="issue-mark">02 <span>·</span> Tablero de ideas</p>
+    </header>
+
+    <main id="inicio">
+      <section class="workspace" aria-label="Tablero de ideas y conversor">
+        <div class="notes-column">
+          <section class="paper note-composer" aria-labelledby="composer-heading">
+            <p class="eyebrow">Tu cuaderno abierto</p>
+            <h1 id="composer-heading">Una idea para<br><em>volver a mirar.</em></h1>
+            <form id="note-form">
+              <div class="field">
+                <label for="texto-nota">Texto</label>
+                <textarea id="texto-nota" name="text" rows="4" placeholder="Una cita, una pregunta, una cuenta…" required></textarea>
+              </div>
+              <div class="field category-field">
+                <label for="categoria-nota">Categoría</label>
+                <select id="categoria-nota" name="category">
+                  <option>Lecturas</option>
+                  <option>Dudas</option>
+                  <option>Cálculos</option>
+                </select>
+              </div>
+              <div class="form-actions">
+                <button id="note-submit" class="button button-primary" type="submit">Guardar nota</button>
+                <button id="cancel-edit" class="button button-quiet" type="button" hidden>Cancelar edición</button>
+              </div>
+            </form>
+          </section>
+
+          <section class="notes-area" aria-labelledby="notes-heading">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Lo que queda</p>
+                <h2 id="notes-heading" tabindex="-1">Tus notas</h2>
+              </div>
+              <div class="field filter-field">
+                <label for="note-filter">Mostrar</label>
+                <select id="note-filter">
+                  <option>Todas</option>
+                  <option>Lecturas</option>
+                  <option>Dudas</option>
+                  <option>Cálculos</option>
+                </select>
+              </div>
+            </div>
+            <div id="note-list" class="note-list" aria-live="polite" aria-relevant="additions removals"></div>
+          </section>
+        </div>
+
+        <section class="paper converter" aria-labelledby="converter-heading">
+          <div class="converter-heading">
+            <p class="eyebrow">Una ayuda al margen</p>
+            <h2 id="converter-heading">Conversor</h2>
+            <p class="intro">Cambiá de escala, conservá la idea.</p>
+          </div>
+          <form id="conversion-form" novalidate>
+            <div class="field">
+              <label for="tipo-conversion">Tipo de conversión</label>
+              <select id="tipo-conversion">
+                <option value="longitud">Longitud</option>
+                <option value="masa">Masa</option>
+                <option value="temperatura">Temperatura</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="valor-origen">Valor</label>
+              <input id="valor-origen" type="number" step="any" inputmode="decimal" placeholder="Por ejemplo, 2.5">
+            </div>
+            <div class="unit-row">
+              <div class="field">
+                <label for="unidad-origen">Desde</label>
+                <select id="unidad-origen"></select>
+              </div>
+              <span class="unit-arrow" aria-hidden="true">→</span>
+              <div class="field">
+                <label for="unidad-destino">Hacia</label>
+                <select id="unidad-destino"></select>
+              </div>
+            </div>
+            <button class="button button-primary convert-button" type="submit">Convertir <span aria-hidden="true">↗</span></button>
+          </form>
+          <div id="resultado-conversion" class="result-box" aria-live="polite" hidden>
+            <p class="eyebrow">Resultado</p>
+            <p id="result-value" class="result-value"></p>
+            <button id="save-conversion" class="button button-outline" type="button" disabled>Guardar como nota</button>
+          </div>
+          <p id="conversion-status" class="status-message" role="status" aria-live="polite"></p>
+        </section>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p id="note-status" class="status-message" role="status" aria-live="polite"></p>
+      <p>Un espacio para pensar con calma <span>·</span> Entre Líneas</p>
+    </footer>
+  </div>
+</body>
+</html>

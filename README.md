@@ -33,7 +33,7 @@ Boceto conservado como referencia de distribución: cabecera a todo lo ancho, fo
 
 ### Encargo inicial — fragmento funcional literal
 
-> Crear/editar/eliminar/filtrar notas por Lecturas, Dudas, Cálculos, persistencia localStorage propia. Conversor longitud m km cm, masa kg g, temperatura C F K; validar finitos vacíos y cero absoluto. Guardar conversión como nota, invalidar resultado al cambiar entrada/unidades, no guardar viejo. Manejar localStorage corrupto/no disponible sin romper UI. Tests de conversiones y validaciones, identidad estable notas; UI responsive según boceto, CRUD seguro textContent.
+> Crear/editar/eliminar/filtrar notas por Lecturas, Dudas, Cálculos, persistencia localStorage propia. Conversor longitud m km cm, masa kg g, temperatura C F K; validar finitos vacíos y cero absoluto. Guardar conversión como nota, invalidar resultado al cambiar entrada/unidades, no guardar viejo. Manejar localStorage corrupto/no disponible sin romper UI. Tests de conversiones y validaciones, identidad estable notas; UI responsive según boceto.
 
 ## Pruebas ejecutadas
 
